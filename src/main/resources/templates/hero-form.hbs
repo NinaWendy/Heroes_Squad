@@ -24,6 +24,10 @@
                 <label for="name" class="form-label">Hero Name:</label>
                 <input type="text" class="form-control" id="name" placeholder="Enter hero name" name="name">
             </div>
+            <div class="mb-3 mt-3">
+                <label for="age" class="form-label">Hero Age:</label>
+                <input type="number" class="form-control" id="age" placeholder="Enter hero age" name="age">
+            </div>
             <div class="mb-3">
                 <div class="form-group">
                     <label for="squad">Select squad:</label>
@@ -45,10 +49,10 @@
             </div>
             <div class="mb-3">
                 <label for="description">Description:</label>
-                <textarea class="form-control" rows="2" id="description" name="description"></textarea>
+                <textarea class="form-control" rows="1" id="description" name="description"></textarea>
             </div>
-
             <button type="submit" class="btn btn-primary">Submit</button>
+            <button class="btn btn-info"><a href="/hero/delete">Delete All</a></button>
         </form>
         <div class="list-group">
             <div class="right">

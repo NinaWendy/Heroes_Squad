@@ -14,9 +14,9 @@
 
 <body>
 
-{{#if editHero}}
     <div class="heroForm">
-        <form action="/hero/{{editHero.id}}/update" method="post" style="width: 30%; margin-left: 35%;">            <span class="badge bg-warning"><a href="/">Home</a> </span>
+        <form action="/hero/{{editHero.id}}/update" method="post" style="width: 30%; margin-left: 35%;">
+            <span class="badge bg-warning"><a href="/">Home</a> </span>
             <span class="badge bg-primary"><a href="/hero">Heroes</a></span>
             <span class="badge bg-success"><a href="./squad">Squad</a> </span>
             <span class="badge bg-danger">Battle</span>
@@ -27,7 +27,7 @@
             </div>
             <div class="mb-3 mt-3">
                 <label for="age" class="form-label">Hero Age:</label>
-                <input type="text" class="form-control" id="age" value="{{editHero.age}}" name="age">
+                <input type="number" class="form-control" id="age" value="{{editHero.age}}" name="age">
             </div>
             <div class="mb-3">
                 <div class="form-group">
@@ -50,14 +50,14 @@
             </div>
             <div class="mb-3">
                 <label for="description">Description:</label>
-                <textarea class="form-control" rows="2" id="description" name="description" >
+                <textarea class="form-control" rows="1" id="description" name="description" >
                     {{editHero.description}}
                 </textarea>
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-{{/if}}
+
 </div>
 </body>
 </html>

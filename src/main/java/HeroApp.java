@@ -13,7 +13,6 @@ public class HeroApp {
         if(list != null){
             heroList= list;
         }
-        assert list != null;
         hero.setId(list.size());
         heroList.add(hero);
     }
