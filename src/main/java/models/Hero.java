@@ -1,13 +1,16 @@
 package models;
 
-public class Hero {
+import java.util.ArrayList;
 
+public class Hero {
+    private int id;
     private String name;
     private int age;
     private String squad;
     private String strength;
     private String weakness;
     private String description;
+    private static ArrayList<Hero> instances = new ArrayList<>();
 
     public Hero(String name, int age, String squad, String strength, String weakness, String description) {
         this.name = name;
@@ -16,8 +19,16 @@ public class Hero {
         this.strength = strength;
         this.weakness = weakness;
         this.description = description;
+        instances.add(this);
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
     public String getName() {
         return name;
     }
@@ -63,6 +74,14 @@ public class Hero {
     }
 
     public void setDescription(String description) {
+        this.description = description;
+    }
+    public void update(String name,int age,String squad,String strength, String weakness, String description) {
+        this.name = name;
+        this.age = age;
+        this.squad = squad;
+        this.strength = strength;
+        this.weakness = weakness;
         this.description = description;
     }
 }
