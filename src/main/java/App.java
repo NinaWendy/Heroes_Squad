@@ -153,7 +153,7 @@ public class App {
         post("/squad/new", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
             String squadName = req.queryParams("squadName");
-            Integer squadSize = Integer.parseInt(req.queryParams("squadSize"));
+            int squadSize = Integer.parseInt(req.queryParams("squadSize"));
             String fightingCause = req.queryParams("fightingCause");
             List<Squad> list = req.session().attribute("Squads");
             Squad newSquad = new Squad(squadName, squadSize, fightingCause);
@@ -257,6 +257,10 @@ public class App {
         get("/404-error",(req, res) -> {
             Map<String, Object> model = new HashMap<>();
             return  new ModelAndView(model,"404-error.hbs");
+        },new HandlebarsTemplateEngine());
+        get("/success",(req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+            return  new ModelAndView(model,"success.hbs");
         },new HandlebarsTemplateEngine());
     }
 }
