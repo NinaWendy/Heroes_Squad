@@ -4,7 +4,6 @@
 
 An app that allows you to recruit a well-balanced team of superheroes (or any other character of your choosing).
 
-[//]: # ([![hero-Squad.png]&#40;https://i.postimg.cc/jdNwCwZN/hero-Squad.png&#41;]&#40;https://postimg.cc/PPXrRxGr&#41;)
 
 ## Table of Content
 
