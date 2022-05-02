@@ -22,15 +22,15 @@
         <h2 style="color:white;">CREATE NEW SQUAD</h2>
         <div class="mb-3 mt-3">
             <label for="squadName" class="form-label" style="color:white;">Squad Name:</label>
-            <input type="text" class="form-control" id="squadName" placeholder="Enter hero name" name="squadName">
+            <input type="text" class="form-control" id="squadName" placeholder="Enter hero name" name="squadName" required>
         </div>
         <div class="mb-3">
             <label for="squadSize" style="color:white;">Size:</label>
-            <input type="number" class="form-control" id="squadSize" placeholder="Enter squad size" name="squadSize">
+            <input type="number" class="form-control" id="squadSize" placeholder="Enter squad size" name="squadSize" required>
         </div>
         <div class="mb-3">
             <label for="fightingCause" class="form-label" style="color:white;">Fighting Cause:</label>
-            <input type="text" class="form-control" id="fightingCause" placeholder="Enter cause" name="fightingCause">
+            <input type="text" class="form-control" id="fightingCause" placeholder="Enter cause" name="fightingCause" required>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
@@ -45,18 +45,9 @@
                     </div>
                 </div>
             {{/each}}
-            {{#if true}}
-                <!--<a href="/squad">show all</a>-->
-            {{/if}}
         </div>
     </div>
 </div>
-
-
-
-
-
-
 </body>
 
 </html>
