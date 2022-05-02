@@ -1,5 +1,6 @@
 package models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Squad {
@@ -8,11 +9,13 @@ public class Squad {
     private String fightingCause;
     private int squadId;
 
+    private List<Hero> squadHeroes;
 
     public Squad(String squadName, int squadSize, String fightingCause) {
         this.squadName = squadName;
         this.squadSize = squadSize;
         this.fightingCause = fightingCause;
+        this.squadHeroes = new ArrayList<>();
     }
 
     public String getSquadName() {
@@ -51,5 +54,11 @@ public class Squad {
         this.squadName = squadName;
         this.squadSize = squadSize;
         this.fightingCause = fightingCause;
+    }
+    public void addsquadHero(Hero hero){
+        squadHeroes.add(hero);
+    }
+    public List<Hero> getSquadHeroes() {
+        return squadHeroes;
     }
 }

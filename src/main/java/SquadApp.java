@@ -1,6 +1,8 @@
+import models.Hero;
 import models.Squad;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class SquadApp {
