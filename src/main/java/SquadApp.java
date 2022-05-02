@@ -1,3 +1,5 @@
+import models.Squad;
+
 import java.util.ArrayList;
 import java.util.List;
 

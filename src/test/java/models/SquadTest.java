@@ -1,3 +1,6 @@
+package models;
+
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -13,14 +16,14 @@ public class SquadTest {
     @Test
     public void getName_objectReturnsNameCorrectly_Thor() {
         Squad squad = setUpNewSquad();
-        assertEquals("Avengers", squad.getSquadName());
+        Assertions.assertEquals("Avengers", squad.getSquadName());
     }
 
     @Test
     public void update_objectCorrectlyUpdatesDetail() {
         Squad squad = setUpNewSquad();
         squad.update("X-men",4,"Corruption");
-        assertEquals("X-men", squad.getSquadName());
+        Assertions.assertEquals("X-men", squad.getSquadName());
     }
 
     @Test
