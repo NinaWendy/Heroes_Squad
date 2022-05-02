@@ -29,8 +29,8 @@
             <input type="number" class="form-control" id="squadSize" placeholder="Enter squad size" name="squadSize">
         </div>
         <div class="mb-3">
-            <label for="fight" class="form-label" style="color:white;">Cause:</label>
-            <input type="text" class="form-control" id="fight" placeholder="Enter cause" name="fight">
+            <label for="fightingCause" class="form-label" style="color:white;">Fighting Cause:</label>
+            <input type="text" class="form-control" id="fightingCause" placeholder="Enter cause" name="fightingCause">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
@@ -40,7 +40,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title"><span class="label">Name: </span>{{squadName}}</h4>
-                        <p class="card-text"><span class="label">Cause: </span>{{fight}}</p>
+                        <p class="card-text"><span class="label">Cause: </span>{{fightingCause}}</p>
                         <a href="/squad/{{squadId}}" class="card-link">more...</a>
                     </div>
                 </div>

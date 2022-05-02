@@ -109,13 +109,13 @@
                 <button type="button" class="btn btn-primary">
                     {{squadName}}<span class="badge bg-danger">{{squadSize}}</span>
                 </button>
-                <h5>CAUSE:<span style="font-weight: normal;font-size: 1.2vw;">{{fight}}</span></h5>
+                <h5>CAUSE:<span style="font-weight: normal;font-size: 1.2vw;">{{fightingCause}}</span></h5>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">Raven</li>
                     {{#each squadHeroes}}
-                        <li>{{name}}</li>
+                        <li class="list-group-item">{{name}}</li>
                     {{/each}}
-                </ul><a style="color:blue;" href="/squad/{{squadId}}">View Heroes</a>
+                </ul><a style="color:blue;" href="/squad/{{squadId}}">more</a>
             </div>
         </div>
     {{/each}}

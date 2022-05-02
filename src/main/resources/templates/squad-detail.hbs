@@ -30,16 +30,9 @@
         </div>
         <div class="mb-3">
             <label for="fight" class="form-label" style="color:white;">Cause:</label>
-            <input type="text" class="form-control" id="fight" disabled="disabled" value="{{Squads.fight}}" name="fight">
+            <input type="text" class="form-control" id="fight" disabled="disabled" value="{{Squads.fightingCause}}" name="fight">
         </div>
-        <ul>
-
-            {{#each squadM}}
-                <li>SquadHeroes</li>
-                <li>{{squadM.name}}</li>
-            {{/each}}
-        </ul>
-
+        <br>
         <button class="btn btn-info"><a href="/squad/{{Squads.squadId}}/hero/new">Add Hero</a></button>
     </form>
 </div>
