@@ -4,6 +4,7 @@
 
 An app that allows you to recruit a well-balanced team of superheroes (or any other character of your choosing).
 
+<img src="src/main/resources/public/images/Home.png">
 
 ## Table of Content
 
