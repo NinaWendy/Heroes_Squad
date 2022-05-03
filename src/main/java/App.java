@@ -262,5 +262,9 @@ public class App {
             Map<String, Object> model = new HashMap<>();
             return  new ModelAndView(model,"success.hbs");
         },new HandlebarsTemplateEngine());
+        get("/battle",(req, res) -> {
+            Map<String, Object> model = new HashMap<>();
+            return  new ModelAndView(model,"Battle.hbs");
+        },new HandlebarsTemplateEngine());
     }
 }
